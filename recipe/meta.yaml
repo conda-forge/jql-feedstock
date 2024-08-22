@@ -1,5 +1,5 @@
 {% set name = "jql" %}
-{% set version = "7.1.11" %}
+{% set version = "7.1.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/yamafaktory/{{ name }}/archive/refs/tags/{{ name }}-v{{ version }}.tar.gz
-  sha256: 147c664a7676f5ff15163c475be50dddee36ef4748334ac93c421b7685c8aeb8
+  sha256: eb558535914ea28ab39761c0a38f22e46e6a24c2f82d2a930cf003e413c7458d
 
 build:
   number: 0
