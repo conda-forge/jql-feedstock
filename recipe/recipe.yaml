@@ -1,0 +1,37 @@
+context:
+  version: 8.0.1
+
+package:
+  name: jql
+  version: ${{ version }}
+
+source:
+  url: https://github.com/yamafaktory/jql/archive/refs/tags/jql-v${{ version }}.tar.gz
+  sha256: 6c1a52d39dc0fcbf183b34f4e4d404c9ccfe6d6180ef45acc82c3746690f1ce6
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ${{ compiler('rust') }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+    - cargo-bundle-licenses
+
+tests:
+  - script:
+      - jql --help
+
+about:
+  license: MIT
+  license_file:
+    - LICENSE-MIT
+    - THIRDPARTY.yml
+  summary: JSON query language CLI tool
+  homepage: https://github.com/yamafaktory/jql
+  repository: https://github.com/yamafaktory/jql
+
+extra:
+  recipe-maintainers:
+    - danielnachun
