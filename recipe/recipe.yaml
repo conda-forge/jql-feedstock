@@ -1,5 +1,5 @@
 context:
-  version: "9.0.4"
+  version: "9.0.5"
 
 package:
   name: jql
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/yamafaktory/jql/archive/refs/tags/jql-v${{ version }}.tar.gz
-  sha256: ebd9ab1d91f7cb6efd076b55fa6cae4696360f3b7e1cd77b62173c14d6b5e50e
+  sha256: ff717f7966b4ffdaa78ae04f89b782ca380de67ec997672652dca3afe096c1d0
 
 build:
   number: 0
